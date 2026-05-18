@@ -1,0 +1,58 @@
+{
+  "materials": [
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "B072",
+      "aliases": ["B072 FIOCCO", "FB072 (historical user note)"],
+      "series_or_finish": "FIOCCO",
+      "visual_family": ["warm light greige", "soft warm gray", "plain matte"],
+      "base_colors": {
+        "highlight": "#D9D5CF",
+        "base": "#CAC5BE",
+        "mid_shadow": "#B9B3AC",
+        "deep_shadow": "#A39D97"
+      },
+      "surface_notes": "Subtle plain texture, low-sheen matte reflection, warm light greige appearance.",
+      "prompt_anchor": "Cleaf B072 Fiocco, a soft warm light greige board finish with subtle plain texture, low-sheen matte reflection, clean and understated Italian panel look",
+      "confidence": "medium",
+      "source_note": "User confirmed the physical board model should be primary, so B072 is the canonical code. The sample watermark shows B072. FB072 is retained only as a historical note."
+    },
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "FB08",
+      "aliases": ["FB086 (user message, pending reconfirmation)"],
+      "series_or_finish": "REFLEX",
+      "visual_family": ["charcoal gray", "dark graphite", "linear textured matte"],
+      "base_colors": {
+        "highlight": "#666867",
+        "base": "#505253",
+        "mid_shadow": "#3D3F41",
+        "deep_shadow": "#2A2B2E"
+      },
+      "surface_notes": "Dark graphite appearance with subtle vertical linear texture and low-sheen matte reflection.",
+      "prompt_anchor": "Cleaf FB08 Reflex, a dark graphite charcoal board finish with subtle vertical linear texture, refined low-sheen matte reflection, premium Italian panel surface",
+      "confidence": "medium",
+      "source_note": "Recorded by the physical board label rule. The overlay text and bottom label in the sample image both show FB08 and REFLEX. The user's message said FB086, retained only as a pending reconfirmation note."
+    },
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "LR65",
+      "aliases": [],
+      "series_or_finish": "PORONOCE",
+      "visual_family": ["light natural oak", "warm beige wood", "fine straight grain"],
+      "base_colors": {
+        "highlight": "#D1B89E",
+        "base": "#C2A78D",
+        "grain": "#AE9278",
+        "deep_grain": "#8E755F"
+      },
+      "surface_notes": "Light natural oak look with fine straight grain, warm beige wood tone, and matte finish.",
+      "prompt_anchor": "Cleaf LR65 Poronoce, a light natural oak finish with fine straight grain, soft warm beige wood tone, subtle realistic timber variation, refined matte panel surface",
+      "confidence": "medium",
+      "source_note": "Recorded from the physical board label. The sample image label shows PORONOCE and LR65."
+    }
+  ]
+}
