@@ -1,12 +1,146 @@
 import fs from "fs";
 import OpenAI from "openai";
 
+function readEnvValue(key, envPath = ".env") {
+  if (!fs.existsSync(envPath)) {
+    return undefined;
+  }
+
+  const lines = fs.readFileSync(envPath, "utf8").split(/\r?\n/);
+
+  for (let i = lines.length - 1; i >= 0; i -= 1) {
+    const line = lines[i].trim();
+    if (!line || line.startsWith("#")) {
+      continue;
+    }
+
+    const match = line.match(new RegExp(`^(?:export\\s+)?${key}\\s*=\\s*(.*)$`));
+    if (!match) {
+      continue;
+    }
+
+    let value = match[1].trim();
+    if (
+      (value.startsWith("\"") && value.endsWith("\"")) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+    return value;
+  }
+
+  return undefined;
+}
+
+function readAuthJsonValue(key, authPath = `${process.env.HOME}/.codex/auth.json`) {
+  if (!fs.existsSync(authPath)) {
+    return undefined;
+  }
+
+  const content = JSON.parse(fs.readFileSync(authPath, "utf8"));
+  return typeof content[key] === "string" ? content[key] : undefined;
+}
+
+function parseTomlStringValue(line, key) {
+  const match = line.match(new RegExp(`^\\s*${key}\\s*=\\s*"([^"]*)"`));
+  return match?.[1];
+}
+
+function readTomlRootValue(key, configPath = `${process.env.HOME}/.codex/config.toml`) {
+  if (!fs.existsSync(configPath)) {
+    return undefined;
+  }
+
+  const lines = fs.readFileSync(configPath, "utf8").split(/\r?\n/);
+
+  for (const line of lines) {
+    if (/^\s*\[/.test(line)) {
+      break;
+    }
+
+    const value = parseTomlStringValue(line, key);
+    if (value !== undefined) {
+      return value;
+    }
+  }
+
+  return undefined;
+}
+
+function readTomlProjectValue(
+  key,
+  projectPath,
+  configPath = `${process.env.HOME}/.codex/config.toml`,
+) {
+  if (!fs.existsSync(configPath)) {
+    return undefined;
+  }
+
+  const lines = fs.readFileSync(configPath, "utf8").split(/\r?\n/);
+  const section = `[projects."${projectPath}"]`;
+  let inTarget = false;
+
+  for (const line of lines) {
+    if (line.trim() === section) {
+      inTarget = true;
+      continue;
+    }
+
+    if (/^\s*\[/.test(line)) {
+      inTarget = false;
+    }
+
+    if (!inTarget) {
+      continue;
+    }
+
+    const value = parseTomlStringValue(line, key);
+    if (value !== undefined) {
+      return value;
+    }
+  }
+
+  return undefined;
+}
+
+function readCodexProjectValue(key, startDir = process.cwd()) {
+  let currentDir = startDir;
+
+  while (true) {
+    const value = readTomlProjectValue(key, currentDir);
+    if (value !== undefined) {
+      return value;
+    }
+
+    const parentDir = new URL("..", `file://${currentDir.replace(/\/?$/, "/")}`).pathname.replace(/\/$/, "") || "/";
+    if (parentDir === currentDir) {
+      break;
+    }
+    currentDir = parentDir;
+  }
+
+  return undefined;
+}
+
+process.env.OPENAI_API_KEY ||= readEnvValue("OPENAI_API_KEY");
+process.env.OPENAI_API_KEY ||= readAuthJsonValue("OPENAI_API_KEY");
+process.env.OPENAI_IMAGE_API_KEY ||= readEnvValue("OPENAI_IMAGE_API_KEY");
+process.env.OPENAI_IMAGE_API_KEY ||= readAuthJsonValue("OPENAI_IMAGE_API_KEY");
+process.env.OPENAI_IMAGE_MODEL ||= readEnvValue("OPENAI_IMAGE_MODEL");
+process.env.OPENAI_IMAGE_MODEL ||= readCodexProjectValue("image_model");
+process.env.OPENAI_IMAGE_MODEL ||= readCodexProjectValue("OPENAI_IMAGE_MODEL");
+process.env.OPENAI_IMAGE_MODEL ||= readTomlRootValue("image_model");
+process.env.OPENAI_IMAGE_MODEL ||= readTomlRootValue("OPENAI_IMAGE_MODEL");
+
+const imageApiKey = process.env.OPENAI_IMAGE_API_KEY || process.env.OPENAI_API_KEY;
+const imageModel = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5";
+
 const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: imageApiKey,
 });
 
-if (!process.env.OPENAI_API_KEY) {
-  throw new Error("OPENAI_API_KEY is not set");
+if (!imageApiKey) {
+  throw new Error("OPENAI_IMAGE_API_KEY or OPENAI_API_KEY is not set");
 }
 
 const imagePath = process.argv[2] || "11客厅-新1.jpg";
@@ -60,7 +194,7 @@ Do not change:
 The result should read as premium Cleaf LR65 Poronoce cabinetry, with consistent natural oak texture across all edited wood areas.`;
 
 const first = await client.responses.create({
-  model: "gpt-5",
+  model: imageModel,
   input: [
     {
       role: "user",
@@ -99,7 +233,7 @@ if (!firstImage?.result) {
 fs.writeFileSync("lr65-first-pass.png", Buffer.from(firstImage.result, "base64"));
 
 const second = await client.responses.create({
-  model: "gpt-5",
+  model: imageModel,
   previous_response_id: first.id,
   input: refinePrompt,
   tools: [

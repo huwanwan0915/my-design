@@ -16,11 +16,46 @@ description: "用于全屋定制、室内设计、柜体改款、材质替换、
 - 用户要基于原图保留户型、机位、透视关系、采光方向
 - 用户要快速出多个风格版本，用于方案比稿或客户确认
 
+## Key 与模型策略
+
+默认优先从运行时环境变量读取配置；未设置时，再从仓库根目录 `.env` 和 Codex 配置文件回退读取。
+
+- 普通请求读取顺序：环境变量 `OPENAI_API_KEY` -> 仓库 `.env` -> `~/.codex/auth.json` 中的 `OPENAI_API_KEY`
+- 图片生成或改图 key 读取顺序：环境变量 `OPENAI_IMAGE_API_KEY` -> 仓库 `.env` -> `~/.codex/auth.json` 中的 `OPENAI_IMAGE_API_KEY` -> 回退到普通 `OPENAI_API_KEY`
+- 图片模型读取顺序：环境变量 `OPENAI_IMAGE_MODEL` -> 仓库 `.env` -> `~/.codex/config.toml` 中项目级或根级 `image_model` / `OPENAI_IMAGE_MODEL`
+- 如果没有单独配置图片模型，默认回退到 `gpt-image-1.5`
+
+`.env` 建议写法：
+
+```dotenv
+OPENAI_API_KEY=your_key_here
+OPENAI_IMAGE_API_KEY=your_image_key_here
+OPENAI_IMAGE_MODEL=gpt-image-2-3x2-4k
+```
+
+`~/.codex/auth.json` / `~/.codex/config.toml` 也可这样配：
+
+```json
+{
+  "OPENAI_API_KEY": "your_default_key_here",
+  "OPENAI_IMAGE_API_KEY": "your_image_key_here"
+}
+```
+
+```toml
+image_model = "gpt-image-2-3x2-4k"
+
+[projects."/Users/maitao/my-design"]
+image_model = "gpt-image-2-3x2-4k"
+```
+
+如果 `.env` 里用了带 `export` 的 shell 写法，也要兼容读取，但新配置应尽量改成上面的标准 dotenv 形式。
+
 ## 模型策略
 
 这类任务优先级不是“通用绘图”，而是“强指令遵循 + 室内细节编辑 + 参考图一致性”。
 
-- 首选图像模型：`gpt-image-1.5`
+- 首选图像模型：`gpt-image-2-3x2-4k`
   适合高质量室内改图、材质替换、柜体细节、灯光氛围、软装重搭。
 - 稳定兼容版本：`gpt-image-1`
   适合常规方案图和中间稿。
@@ -29,13 +64,14 @@ description: "用于全屋定制、室内设计、柜体改款、材质替换、
 重要限制：
 
 - 当前 skill 的 `agents/openai.yaml` 没有标准字段可直接锁定图像模型。
-- 如果走 Images API 并且你能显式传 `model`，本 skill 默认要求优先使用 `gpt-image-1.5`。
-- 如果走 Responses API，可以直接把主模型设为 `gpt-image-1.5`；如果你更希望由通用推理模型先整理提示词，再调用 `image_generation` 工具，可用当前可用的 GPT-5 系列主模型。
-- 在 Responses API 里，`gpt-image-1.5` 支持可选 `action` 参数；做全屋定制“改图”时优先设为 `edit`。
+- 如果走 Images API 并且你能显式传 `model`，本 skill 默认要求优先使用 `OPENAI_IMAGE_MODEL`，未配置时回退到 `gpt-image-1.5`。
+- 如果走 Images API 或 Responses API 的图片工具，默认优先使用 `OPENAI_IMAGE_API_KEY`，未配置时回退到 `OPENAI_API_KEY`。
+- 如果走 Responses API，生成设计图时也优先直接使用 GPT 生图模型，而不是默认落到通用文本模型。
+- 在 Responses API 里，图像编辑优先设为 `action: edit`。
 
 执行时按下面规则处理：
 
-1. 能显式指定图像模型时，默认用 `gpt-image-1.5`。
+1. 能显式指定图像模型时，默认用 `OPENAI_IMAGE_MODEL`；未配置时用 `gpt-image-1.5`。
 2. 做“保留原图结构的室内改图”时，优先走 edit 流程，而不是 generate。
 3. 如果用户强调稳定兼容而不是最新效果，降到 `gpt-image-1`。
 4. 如果用户强调低成本多方案，再降到 `gpt-image-1-mini`。

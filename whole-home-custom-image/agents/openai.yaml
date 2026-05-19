@@ -1,7 +1,7 @@
 interface:
   display_name: "全屋定制改图"
   short_description: "室内空间与柜体效果图修改技能"
-  default_prompt: "Use $whole-home-custom-image to edit a whole-home custom interior rendering while preserving room geometry and camera perspective."
+  default_prompt: "Use $whole-home-custom-image to edit or generate whole-home custom interior renderings. Resolve normal auth from env, repo .env, then ~/.codex/auth.json. For image generation, prefer OPENAI_IMAGE_API_KEY and OPENAI_IMAGE_MODEL, and fall back to ~/.codex/config.toml image_model when needed. Preserve room geometry and camera perspective when editing."
 
 policy:
   allow_implicit_invocation: true
