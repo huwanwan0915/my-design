@@ -1,1 +1,13 @@
 .env
+
+# Intermediate image-edit artifacts
+*_prev.*
+*_backup*.*
+*_before_v*.*
+*_tweak.*
+餐边柜侧面_LR65.png
+餐边柜侧面_LR65_v2.png
+餐边柜侧面_LR65_v3.png
+11客厅-新1_LR65.jpg
+LR65_当前图.jpg
+LR65_精修.jpg
