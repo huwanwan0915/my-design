@@ -122,6 +122,42 @@ function readCodexProjectValue(key, startDir = process.cwd()) {
   return undefined;
 }
 
+function readModelProviderConfig(
+  providerName,
+  key,
+  configPath = `${process.env.HOME}/.codex/config.toml`,
+) {
+  if (!providerName || !fs.existsSync(configPath)) {
+    return undefined;
+  }
+
+  const lines = fs.readFileSync(configPath, "utf8").split(/\r?\n/);
+  const section = `[model_providers.${providerName}]`;
+  let inTarget = false;
+
+  for (const line of lines) {
+    if (line.trim() === section) {
+      inTarget = true;
+      continue;
+    }
+
+    if (/^\s*\[/.test(line)) {
+      inTarget = false;
+    }
+
+    if (!inTarget) {
+      continue;
+    }
+
+    const value = parseTomlStringValue(line, key);
+    if (value !== undefined) {
+      return value;
+    }
+  }
+
+  return undefined;
+}
+
 process.env.OPENAI_API_KEY ||= readEnvValue("OPENAI_API_KEY");
 process.env.OPENAI_API_KEY ||= readAuthJsonValue("OPENAI_API_KEY");
 process.env.OPENAI_IMAGE_API_KEY ||= readEnvValue("OPENAI_IMAGE_API_KEY");
@@ -131,12 +167,19 @@ process.env.OPENAI_IMAGE_MODEL ||= readCodexProjectValue("image_model");
 process.env.OPENAI_IMAGE_MODEL ||= readCodexProjectValue("OPENAI_IMAGE_MODEL");
 process.env.OPENAI_IMAGE_MODEL ||= readTomlRootValue("image_model");
 process.env.OPENAI_IMAGE_MODEL ||= readTomlRootValue("OPENAI_IMAGE_MODEL");
+const projectProvider =
+  readCodexProjectValue("model_provider") || readTomlRootValue("model_provider");
+const imageBaseUrl =
+  process.env.OPENAI_BASE_URL ||
+  readEnvValue("OPENAI_BASE_URL") ||
+  readModelProviderConfig(projectProvider, "base_url");
 
 const imageApiKey = process.env.OPENAI_IMAGE_API_KEY || process.env.OPENAI_API_KEY;
 const imageModel = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5";
 
 const client = new OpenAI({
   apiKey: imageApiKey,
+  baseURL: imageBaseUrl,
 });
 
 if (!imageApiKey) {

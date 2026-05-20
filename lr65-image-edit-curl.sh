@@ -118,6 +118,14 @@ if [[ -z "${OPENAI_IMAGE_API_KEY:-}" ]]; then
   export OPENAI_IMAGE_API_KEY
 fi
 
+if [[ -z "${OPENAI_BASE_URL:-}" ]]; then
+  OPENAI_BASE_URL="$(load_env_var OPENAI_BASE_URL .env || true)"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_codex_project_var base_url || true)}"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_toml_root_var base_url || true)}"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_toml_root_var base_url "$HOME/.codex/config.toml" || true)}"
+  export OPENAI_BASE_URL
+fi
+
 if [[ -z "${HTTP_PROXY:-}" ]]; then
   HTTP_PROXY="$(load_env_var HTTP_PROXY .env || true)"
   export HTTP_PROXY
@@ -152,6 +160,8 @@ MODEL="${MODEL:-$(load_codex_project_var OPENAI_IMAGE_MODEL || true)}"
 MODEL="${MODEL:-$(load_toml_root_var image_model || true)}"
 MODEL="${MODEL:-$(load_toml_root_var OPENAI_IMAGE_MODEL || true)}"
 MODEL="${MODEL:-gpt-image-1.5}"
+IMAGE_API_BASE="${OPENAI_BASE_URL:-https://api.openai.com/v1}"
+IMAGE_EDIT_URL="${IMAGE_API_BASE%/}/images/edits"
 SIZE="${SIZE:-1536x1024}"
 QUALITY="${QUALITY:-high}"
 OUTPUT_FORMAT="${OUTPUT_FORMAT:-png}"
@@ -190,7 +200,7 @@ Material constraints:
 EOF
 )"
 
-curl --fail-with-body -sS https://api.openai.com/v1/images/edits \
+curl --fail-with-body -sS "${IMAGE_EDIT_URL}" \
   -H "Authorization: Bearer $IMAGE_API_KEY" \
   -F "model=${MODEL}" \
   -F "image[]=@${IMAGE_PATH}" \
