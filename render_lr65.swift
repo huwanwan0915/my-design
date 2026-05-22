@@ -64,15 +64,15 @@ let regions: [Region] = [
 ]
 
 func oakTintColor() -> CGColor {
-    return CGColor(red: 0.76, green: 0.66, blue: 0.56, alpha: 1.0)
+    return CGColor(red: 0.78, green: 0.66, blue: 0.55, alpha: 1.0)
 }
 
 func darkerOakColor() -> CGColor {
-    return CGColor(red: 0.64, green: 0.53, blue: 0.44, alpha: 0.32)
+    return CGColor(red: 0.62, green: 0.50, blue: 0.39, alpha: 0.28)
 }
 
 func lighterOakColor() -> CGColor {
-    return CGColor(red: 0.87, green: 0.79, blue: 0.70, alpha: 0.22)
+    return CGColor(red: 0.85, green: 0.76, blue: 0.66, alpha: 0.03)
 }
 
 func applyTintAndGrain(region: Region, index: Int) {
@@ -81,17 +81,17 @@ func applyTintAndGrain(region: Region, index: Int) {
 
     // Keep the original shading, but pull the hue toward LR65's warm beige oak.
     ctx.setBlendMode(.multiply)
-    ctx.setAlpha(0.42)
+    ctx.setAlpha(0.56)
     ctx.setFillColor(oakTintColor())
     ctx.fill(region.rect)
 
     ctx.setBlendMode(.softLight)
-    ctx.setAlpha(0.18)
+    ctx.setAlpha(0.02)
     ctx.setFillColor(lighterOakColor())
     ctx.fill(region.rect)
 
     ctx.setBlendMode(.multiply)
-    ctx.setAlpha(0.18)
+    ctx.setAlpha(0.22)
     ctx.setFillColor(darkerOakColor())
     ctx.fill(region.rect)
 
@@ -115,7 +115,7 @@ func applyTintAndGrain(region: Region, index: Int) {
         return CGFloat(z & 0xffff) / CGFloat(0xffff)
     }
 
-    let grainColor = CGColor(red: 0.54, green: 0.43, blue: 0.33, alpha: 0.10)
+    let grainColor = CGColor(red: 0.47, green: 0.38, blue: 0.30, alpha: 0.09)
     ctx.setStrokeColor(grainColor)
 
     switch region.orientation {
@@ -123,14 +123,14 @@ func applyTintAndGrain(region: Region, index: Int) {
         ctx.setLineWidth(1.0)
         var y = minY
         while y < maxY {
-            let spacing = 4 + Int(next() * 7)
+            let spacing = 4 + Int(next() * 4)
             let wobble = CGFloat(next() * 2.0 - 1.0)
             let y1 = CGFloat(y) + wobble
-            let alpha = 0.05 + next() * 0.09
-            ctx.setStrokeColor(CGColor(red: 0.48, green: 0.37, blue: 0.28, alpha: alpha))
+            let alpha = 0.035 + next() * 0.045
+            ctx.setStrokeColor(CGColor(red: 0.46, green: 0.37, blue: 0.29, alpha: alpha))
             ctx.beginPath()
             ctx.move(to: CGPoint(x: CGFloat(minX), y: y1))
-            ctx.addLine(to: CGPoint(x: CGFloat(maxX), y: y1 + CGFloat(next() * 0.8 - 0.4)))
+            ctx.addLine(to: CGPoint(x: CGFloat(maxX), y: y1 + CGFloat(next() * 0.18 - 0.09)))
             ctx.strokePath()
             y += spacing
         }
@@ -138,14 +138,14 @@ func applyTintAndGrain(region: Region, index: Int) {
         ctx.setLineWidth(1.0)
         var x = minX
         while x < maxX {
-            let spacing = 4 + Int(next() * 6)
+            let spacing = 4 + Int(next() * 4)
             let wobble = CGFloat(next() * 2.0 - 1.0)
             let x1 = CGFloat(x) + wobble
-            let alpha = 0.05 + next() * 0.09
-            ctx.setStrokeColor(CGColor(red: 0.48, green: 0.37, blue: 0.28, alpha: alpha))
+            let alpha = 0.035 + next() * 0.045
+            ctx.setStrokeColor(CGColor(red: 0.46, green: 0.37, blue: 0.29, alpha: alpha))
             ctx.beginPath()
             ctx.move(to: CGPoint(x: x1, y: CGFloat(minY)))
-            ctx.addLine(to: CGPoint(x: x1 + CGFloat(next() * 0.8 - 0.4), y: CGFloat(maxY)))
+            ctx.addLine(to: CGPoint(x: x1 + CGFloat(next() * 0.18 - 0.09), y: CGFloat(maxY)))
             ctx.strokePath()
             x += spacing
         }
@@ -153,13 +153,13 @@ func applyTintAndGrain(region: Region, index: Int) {
         ctx.setLineWidth(1.0)
         var t = 0
         while t < Int(rect.width + rect.height) {
-            let spacing = 8 + Int(next() * 8)
-            let alpha = 0.03 + next() * 0.06
-            ctx.setStrokeColor(CGColor(red: 0.48, green: 0.37, blue: 0.28, alpha: alpha))
+            let spacing = 18 + Int(next() * 10)
+            let alpha = 0.01 + next() * 0.015
+            ctx.setStrokeColor(CGColor(red: 0.46, green: 0.37, blue: 0.29, alpha: alpha))
             ctx.beginPath()
             let x = CGFloat(minX) + CGFloat(t)
             ctx.move(to: CGPoint(x: x, y: CGFloat(minY)))
-            ctx.addLine(to: CGPoint(x: x + 40, y: CGFloat(maxY)))
+            ctx.addLine(to: CGPoint(x: x + 20, y: CGFloat(maxY)))
             ctx.strokePath()
             t += spacing
         }

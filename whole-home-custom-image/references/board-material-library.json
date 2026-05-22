@@ -42,17 +42,17 @@
       "code": "LR65",
       "aliases": [],
       "series_or_finish": "PORONOCE",
-      "visual_family": ["light natural oak", "warm beige wood", "fine straight grain"],
+      "visual_family": ["warm camel-brown beige board", "grounded light brown-beige wood", "extremely fine dense straight vertical grain"],
       "base_colors": {
-        "highlight": "#D1B89E",
-        "base": "#C2A78D",
-        "grain": "#AE9278",
-        "deep_grain": "#8E755F"
+        "highlight": "#D7BEA4",
+        "base": "#C6A98D",
+        "grain": "#B29173",
+        "deep_grain": "#947659"
       },
-      "surface_notes": "Light natural oak look with fine straight grain, warm beige wood tone, and matte finish.",
-      "prompt_anchor": "Cleaf LR65 Poronoce, a light natural oak finish with fine straight grain, soft warm beige wood tone, subtle realistic timber variation, refined matte panel surface",
+      "surface_notes": "The confirmed target reads as a warm, slightly deeper, slightly browner camel-brown beige board tone with a grounded light brown-beige base, extremely fine dense straight grain, low contrast, and a soft satin-matte panel finish with a subtle board sheen. It should not drift toward bleached pale oak, gray wash, pink cast, dead-flat matte, or overly yellow oak; it should also avoid mountain grain, rustic knots, and exaggerated natural timber drama.",
+      "prompt_anchor": "Cleaf LR65 Poronoce, a distinctly warm camel-brown beige board finish with a grounded light brown-beige base, extremely fine dense straight vertical grain, low-contrast variation, and a soft satin-matte panel surface with a subtle board sheen, never bleached, grayish, pink, or generic pale oak",
       "confidence": "medium",
-      "source_note": "Recorded from the physical board label. The sample image label shows PORONOCE and LR65."
+      "source_note": "Recorded from the physical board label and corrected against the user-confirmed real sample direction. The persistent memory is: warmer, slightly deeper, slightly browner than generic pale oak, with denser straighter grain and a subtle board sheen."
     }
   ]
 }

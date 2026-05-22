@@ -63,16 +63,16 @@
 - `code`: `LR65`
 - `aliases`: none
 - `series_or_finish`: `PORONOCE`
-- `visual_family`: `light natural oak`, `warm beige wood`, `fine straight grain`
+- `visual_family`: `warm camel-brown beige board`, `grounded light brown-beige wood`, `extremely fine dense straight vertical grain`
 - `base_colors`:
-  - `#D1B89E` high-light
-  - `#C2A78D` base
-  - `#AE9278` grain
-  - `#8E755F` deep grain
-- `surface_notes`: 浅暖橡木方向，整体偏自然原木米棕，带细直纹和少量轻微矿物线，不应做成大山纹，也不应过红或过黄。
-- `prompt_anchor`: `Cleaf LR65 Poronoce, a light natural oak finish with fine straight grain, soft warm beige wood tone, subtle realistic timber variation, refined matte panel surface`
+  - `#D7BEA4` soft highlight
+  - `#C6A98D` base
+  - `#B29173` grain
+  - `#947659` deep grain
+- `surface_notes`: 当前确认版应理解为偏暖、略深、略棕的驼棕米色板材，不发灰、不发粉、不漂白。纹路是极细密的直纹，方向稳定、连续、低对比，不能做成粗线、花纹或天然木大山纹。表面不是死哑光，而是带轻微板材光泽的 satin-matte 观感，整体要像高端定制板，而不是泛浅橡木。
+- `prompt_anchor`: `Cleaf LR65 Poronoce, a distinctly warm camel-brown beige board finish with a grounded light brown-beige base, extremely fine dense straight vertical grain, low-contrast variation, and a soft satin-matte panel surface with a subtle board sheen, never bleached, grayish, pink, or generic pale oak`
 - `confidence`: `medium`
-- `source_note`: 按板材实物标签入库。图片底部标签可见 `PORONOCE` 与 `LR65`。
+- `source_note`: 按板材实物标签与用户确认过的实拍校正。最终记忆点是：比常见浅橡木更暖、更深、更棕，纹路更细更密，并带一点板材光泽。
 
 ## Prompt Usage
 

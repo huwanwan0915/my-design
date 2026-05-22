@@ -106,6 +106,29 @@ load_codex_project_var() {
   return 1
 }
 
+load_model_provider_base_url() {
+  local provider_name="${1:-}"
+  local config_file="${2:-$HOME/.codex/config.toml}"
+
+  [[ -n "$provider_name" ]] || return 1
+  [[ -f "$config_file" ]] || return 1
+
+  awk -v provider="$provider_name" '
+    $0 == "[model_providers." provider "]" { in_target = 1; next }
+    /^[[:space:]]*\[/ { in_target = 0 }
+    in_target {
+      pattern = "^[[:space:]]*base_url[[:space:]]*=[[:space:]]*\""
+      if ($0 ~ pattern) {
+        value = $0
+        sub(pattern, "", value)
+        sub(/".*$/, "", value)
+        print value
+        exit
+      }
+    }
+  ' "$config_file"
+}
+
 if [[ -z "${OPENAI_API_KEY:-}" ]]; then
   OPENAI_API_KEY="$(load_env_var OPENAI_API_KEY .env || true)"
   OPENAI_API_KEY="${OPENAI_API_KEY:-$(load_auth_json_var OPENAI_API_KEY || true)}"
@@ -120,8 +143,10 @@ fi
 
 if [[ -z "${OPENAI_BASE_URL:-}" ]]; then
   OPENAI_BASE_URL="$(load_env_var OPENAI_BASE_URL .env || true)"
-  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_codex_project_var base_url || true)}"
   OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_toml_root_var base_url || true)}"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_model_provider_base_url "${OPENAI_MODEL_PROVIDER:-$(load_toml_root_var model_provider || true)}" || true)}"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_model_provider_base_url "${OPENAI_MODEL_PROVIDER:-$(load_codex_project_var model_provider || true)}" || true)}"
+  OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_codex_project_var base_url || true)}"
   OPENAI_BASE_URL="${OPENAI_BASE_URL:-$(load_toml_root_var base_url "$HOME/.codex/config.toml" || true)}"
   export OPENAI_BASE_URL
 fi
@@ -173,7 +198,7 @@ Goal:
 Change all visible wood-grain cabinetry parts in the image to Cleaf LR65 Poronoce.
 
 Material reference:
-Cleaf LR65 Poronoce, a light natural oak finish with fine straight grain, soft warm beige wood tone, subtle realistic timber variation, refined matte panel surface.
+Cleaf LR65 Poronoce, a warm honey-beige board finish with a soft camel undertone, extremely fine dense straight vertical grain, low-contrast variation, and a subtle satin-sheen panel surface.
 
 Change only these wood-grain areas:
 - the wood cabinetry around the coffee station on the left
@@ -191,12 +216,18 @@ Keep unchanged:
 - cabinet proportions, panel gaps, and handle-free detailing
 
 Material constraints:
-- use LR65 as a light natural oak with fine straight grain
-- keep the wood tone warm beige, not yellow, not orange, not red
-- keep a realistic matte finish
-- preserve subtle grain direction and realistic wood texture scale
-- do not turn the wood into heavy mountain grain or dark walnut
+- use LR65 as a warm honey-beige board with extremely fine dense straight grain
+- keep the wood tone warm honey-beige with a soft camel undertone, not bleached, not gray-washed, not pale oak, not yellow, not orange, not red, not pink
+- keep a subtle satin-sheen finish, not dead-flat matte and not glossy
+- preserve stable straight grain direction and realistic low-contrast board texture scale
+- do not turn the wood into heavy mountain grain, generic pale oak, rustic timber, or dark walnut
 - do not alter any non-wood parts
+
+Critical matching note:
+- match the real LR65 sample as a board material, not generic light oak
+- the result must look warm honey-beige, slightly richer than pale washed oak, but not dark
+- grain must be much finer, denser, straighter, and more continuous
+- keep the cabinetry elegant and restrained, with a refined manufactured board look
 EOF
 )"
 
