@@ -1,0 +1,7 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit the main image only.
+Primary request: The current open bookshelf area is too wide. Redesign only the masked wall-cabinet zone so that the left side becomes four tall flat white cabinet doors matching the existing minimalist matte white doors in the room, with subtle vertical seams and no handles. Shrink the wooden open bookshelf/display area to the right side only, preserving a compact warm light-oak open shelf layout with dark recessed back panels and a lower wood drawer/cabinet band.
+Layout: From left to right inside the masked area: four equal-width white cabinet door panels, then one narrower right-side wooden open bookshelf module. The open shelf should be much smaller than before and should not occupy the full masked width.
+Constraints: Keep the original room composition, camera angle, perspective, lighting, ceiling, floor, rug, coffee table, kitchen area, washing machines, and all unmasked areas unchanged. Match the existing white cabinet material and vertical seam spacing. Keep the result clean, photorealistic, high-end interior rendering. No text, no logos, no watermark.
+Avoid: keeping three wide bookshelf columns, changing the whole wall, changing the coffee table, adding visible handles, adding random words on books, distorting cabinet seams.

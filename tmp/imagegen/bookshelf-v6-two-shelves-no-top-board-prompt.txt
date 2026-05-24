@@ -1,0 +1,8 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit the original main image only.
+Primary request: Preserve the four white cabinet doors on the left exactly as in the original image: all four doors must remain visible, same widths, same vertical seams, same positions, same matte white material. Do not alter, cover, widen, narrow, or redraw any white cabinet door.
+Wood bookshelf requirements: Only edit the wood-grain bookshelf/display area to the right of the four white doors. The open wood bookshelf should have no vertical dividers inside the open area. It should have exactly two horizontal shelf boards in the middle. Do not add a shelf board at the very top; the top should be open with only the outer wood frame/ceiling edge. Keep a dark recessed back panel, warm light-oak side frame, and a clean lower floating wood cabinet-door band with a shadow gap above the floor.
+Layout detail: The wood bookcase should read as one continuous vertical open bay across its width, divided by only two middle horizontal shelves into three open display levels. No top internal layer board, no extra fourth shelf, no vertical partitions.
+Constraints: Preserve all unmasked areas exactly, especially all four white cabinet doors and their equal widths. Keep room composition, camera angle, lighting, floor, ceiling, coffee table, rug, kitchen, washing machines, and wall geometry unchanged. No text, no logos, no watermark.
+Avoid: hiding the fourth white door, changing white door widths, adding vertical dividers in the wood shelf, adding a top shelf board, adding more than two horizontal shelf boards, creating three bookshelf columns, random readable words.

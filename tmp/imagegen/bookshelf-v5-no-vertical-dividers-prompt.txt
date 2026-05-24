@@ -1,0 +1,7 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit the original main image only.
+Primary request: Keep the four white cabinet doors and their exact original widths, positions, seams, color, and material completely unchanged. Only redesign the masked wood-grain bookshelf/display zone to the right of those four white doors.
+Wood bookshelf requirements: The wood-grain part should have no vertical dividers inside the open shelf area. Use one continuous open bay across the wood section, with only horizontal shelves. Keep warm light-oak side frame and horizontal shelf boards, dark recessed back panels, and a clean lower floating wood cabinet-door band with a shadow gap above the floor. The wood section width should remain consistent with the original right-side wood area and should not invade or resize the white doors.
+Constraints: Preserve all unmasked areas exactly, especially the four white cabinet doors on the left, their width, and their vertical seams. Keep the original room composition, camera angle, lighting, floor, ceiling, coffee table, rug, kitchen, washing machines, and wall geometry unchanged. Minimal high-end photorealistic interior render. No text, no logos, no watermark.
+Avoid: adding any vertical partition boards in the wooden open shelves, changing the four white cabinet doors, widening or narrowing the white doors, creating three bookshelf columns, adding handles, adding readable text on books, changing the room outside the wood area.

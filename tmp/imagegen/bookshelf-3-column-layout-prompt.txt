@@ -1,0 +1,11 @@
+Edit the main living room render using the reference image only for the bookshelf layout.
+
+Images:
+1. Main image: keep the whole room, camera angle, lighting, floor, wall panels, right tall door panel, laundry area, coffee table, marble textures, colors, and photorealistic quality unchanged.
+2. Reference image: use only as layout guidance for the wood-grain bookshelf area.
+
+Primary edit:
+Modify only the wood-grain open bookshelf/cabinet section in the main image so it copies the reference bookshelf's three-column vertical layout: three full-height vertical bays/columns across the wood bookshelf width, with straight vertical dividers, open shelving proportions similar to the reference, warm light oak wood frames/shelves, and darker recessed back panels in the open shelf areas. Keep the lower cabinet/drawer zone aligned cleanly across the bottom like the reference. Preserve realistic perspective and make the new layout match the main image's existing cabinetry style.
+
+Strict constraints:
+Change only the bookshelf wood-grain section inside the masked area. Do not change the adjacent right tall plain door panel, white wall, washing machines, ceiling, left wall cabinets, floor, coffee table, or any other room elements. Remove/replace the existing swan sculptures and decorative objects as needed so the three-column bookshelf layout is clear. No text, no watermark, no people.

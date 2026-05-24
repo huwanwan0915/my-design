@@ -1,0 +1,7 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit the original main image only.
+Primary request: Redesign only the masked right-side wood bookshelf zone. Keep the four existing white cabinet doors immediately to the left exactly the same width, position, seams, color, and material as the original image; do not widen or redraw them.
+Bookshelf layout: To the right of the four white cabinet doors, create a medium-width warm light-oak bookshelf, wider than the previous narrow one. Use a clean floating-cabinet design: open display shelves above with dark recessed back panels, and a suspended/floating lower wood cabinet-door band below, lifted off the floor with a shadow gap/toe recess so it feels floating. The open shelf portion should be moderately wide and balanced, not a single skinny strip; use two or three vertical open bays if space allows, with realistic books and decor but no readable text.
+Constraints: Preserve all unmasked areas exactly, especially the four white cabinet doors on the left, the coffee table, rug, floor, ceiling, washer/dryer, kitchen area, lighting, perspective, and wall geometry. Match the original minimalist high-end interior style. No text, no logos, no watermark.
+Avoid: changing the white cabinet door widths, stretching the white doors, making the open shelves too narrow, making the bookcase occupy the white cabinet area, floor-to-ceiling bulky cabinet base, distorted shelves, random words on books.

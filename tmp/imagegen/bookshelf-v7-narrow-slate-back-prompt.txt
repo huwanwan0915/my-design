@@ -1,0 +1,7 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit the provided image only.
+Primary request: Keep the white cabinet doors to the left completely unchanged and visually equal-width. Do not alter their seams, widths, positions, color, or material. Only adjust the masked wooden bookshelf area on the right.
+Wood bookshelf changes: Make the wood-grain bookshelf slightly narrower than the current version while keeping it aligned to the right wall. Replace the dark back panel inside the open shelves with the same light grey veined stone/slate slab material used in the dining sideboard / left cabinet backsplash area. Keep the warm light-oak outer frame and floating lower wood cabinet door. Keep no vertical dividers. Keep exactly two horizontal shelf boards in the middle and no extra internal top shelf board.
+Constraints: The four white cabinet doors must remain equal-width and untouched. Preserve room composition, camera angle, lighting, floor, ceiling, coffee table, rug, kitchen, washing machines, and all unmasked areas exactly. Photorealistic high-end interior render. No text, no logos, no watermark.
+Avoid: changing white door widths, hiding a white door, using dark back panels, adding vertical dividers, adding more than two shelf boards, adding a top internal shelf, making the wood section wider, readable text.

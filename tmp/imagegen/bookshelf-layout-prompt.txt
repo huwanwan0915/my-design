@@ -1,0 +1,6 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input images: Image 1 is the main image to edit. Image 2 is the reference for the bookshelf wood layout only.
+Primary request: In Image 1, edit only the masked right-side bookshelf / wood-grain display cabinet area. Change its wooden bookshelf layout to match Image 2's three-column wood bookshelf arrangement: warm light oak vertical dividers, three clear vertical bays/columns, open shelves with dark recessed back panels, and a lower continuous wood cabinet/drawer band aligned cleanly across the bays. Keep the style minimal, high-end, photorealistic, and integrated with the existing cabinetry.
+Constraints: Preserve the original room composition, camera angle, perspective, lighting, floor, ceiling, white cabinet doors, right tall door panel edge, washing machines, coffee table, rug, and all unmasked areas exactly. Use Image 2 only for the 3-column bookshelf layout and material relationship; do not copy the watermark text, crop edge, TV, or any visible lettering. No text, no logos, no watermark. Keep realistic wood grain and correct shadows.
+Avoid: changing anything outside the masked bookshelf zone, adding distorted shelves, adding random text, changing the room geometry, replacing the whole wall.

@@ -1,0 +1,6 @@
+Use case: precise interior-design edit
+Asset type: photorealistic living room render
+Input image: Edit only the masked lower wood cabinet band of the open bookshelf.
+Primary request: Convert the lower wood drawer fronts in the open bookshelf into a pair of side-by-side hinged double doors. Remove the horizontal drawer split line. Add one clean vertical seam exactly in the center, creating two equal-width flat wood cabinet doors. Keep the same warm light-oak material, flat handleless minimalist style, and floating cabinet shadow gap.
+Constraints: Change only the masked lower cabinet front. Preserve the stone/slate back panel, the two horizontal shelf boards, the open shelves, the five white cabinet doors, room composition, coffee table, washer/dryer, floor, ceiling, lighting, and all unmasked areas exactly. No text, no logos, no watermark.
+Avoid: changing the shelf layout, adding handles, adding horizontal drawer lines, changing the cabinet size, altering white cabinet doors or stone back panel.
