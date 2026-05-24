@@ -1,0 +1,10 @@
+Use case: precise-object-edit
+Asset type: interior design render edit
+Primary request: Edit only the wood drawer section inside the right-side bookcase. Remove the upper wood drawer directly under the open shelves, so that area becomes an open empty shelf/cubby or continuous open bookcase space matching the existing stone/slate back panel and wood frame. Keep only the lower large wood drawer, and divide that lower drawer into exactly two equal-width wood drawers with one clean vertical seam in the center.
+Input image: original living room render; preserve camera, perspective, lighting, materials and all areas outside the drawer section.
+Subject: lower wood drawer area of the right-side bookcase only.
+Style/medium: photorealistic modern minimalist interior render.
+Composition/framing: keep the same crop and perspective. The lower remaining drawer row should stay at the same bottom position and width. The upper drawer front should disappear and become open space beneath the shelf above.
+Materials/textures: warm light-oak wood drawer fronts; subtle horizontal seams; one centered vertical seam splitting the lower drawer into two equal drawers; matching slate/stone back panel in the opened upper area.
+Constraints: Change only the two wood drawer rows in the bookcase. Keep the open shelves above, wood side frames, slate back panels, white wall panels, coffee table, floor, ceiling, kitchen, laundry machines, and lighting unchanged. Final design must have no upper drawer and exactly two lower drawers.
+Avoid: adding handles, changing shelf count above, changing white cabinet doors, adding extra drawers, full-height wooden panel, warped lines, changing room layout, text, watermark.

@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Asset type: photorealistic interior design render
+Primary request: In the right-side open bookshelf only, replace the short drawer at the lower part with one single vertical cabinet door. The new cabinet door should be about twice the height of the original drawer front, made of the same light oak wood, with a clean flat slab front and subtle vertical grain. Rebalance the open shelves above so their spacing is logical and elegant: keep an open marble-backed upper cubby, one wood shelf above the tall door, and consistent shelf thickness/alignment.
+Input image: keep the overall room, wall panels, kitchen, laundry area, coffee table, floor, rug, lighting, camera angle and proportions unchanged.
+Constraints: change only the right bookshelf module; do not add decorative objects; do not add handles unless very subtle/hidden; preserve the outer wood frame, marble back panel style, realistic shadows, reflections and perspective; maintain the same minimalist light-wood + marble material palette.
+Avoid: double doors, multiple drawer lines, black panels, changing the adjacent white wardrobe doors, changing the coffee table, changing the washing machines, text, watermark.

@@ -1,0 +1,10 @@
+Use case: precise-object-edit
+Asset type: interior design render edit
+Primary request: Refine the right-side bookcase/cabinet only. The lower closed storage must remain exactly four equal-width flat matte white cabinet doors. Shrink the warm wood open shelving/display grid so it occupies only the right half of the cabinet, exactly the width of two of the lower white doors. The left half of the bookcase area should become flat white closed cabinet panels matching the lower white doors, so the visible wood open shelving is only two-door-width wide.
+Input image: current living room render; preserve camera, perspective, lighting, materials and all non-bookcase areas.
+Subject: right-side built-in bookcase/cabinet only.
+Style/medium: photorealistic modern minimalist interior render.
+Composition/framing: keep the same image crop and perspective. Align all vertical seams with the four lower white doors. The wood open shelves should be above only two lower doors, preferably on the right side of the cabinet.
+Materials/textures: matte white flat slab doors on the left half and lower section; warm light-oak open shelves only two-door-width wide; subtle realistic seams; clean built-in joinery.
+Constraints: Change only the right-side bookcase/cabinet area. Keep exactly four white lower cabinet doors. Reduce the wood open display grid to roughly two drawer/door widths, not full width. Keep coffee table, floor, ceiling, kitchen, left tall wall panels, laundry machines, wall surfaces, decorations, and overall lighting unchanged.
+Avoid: full-width wood open shelving, more or fewer than four white doors, handles, vertical wood dividers on the white doors, warped cabinet lines, changing appliances, changing room layout, text, watermark.

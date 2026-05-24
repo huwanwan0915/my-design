@@ -1,0 +1,10 @@
+Use case: compositing / precise-object-edit
+Asset type: interior design render edit
+Primary request: Use Image 1 as the photorealistic living room render to edit. Use Image 2 only as a layout guide for the cabinet proportions. Rebuild only the right-side bookcase/cabinet to match the guide: bottom row has exactly four equal-width flat white cabinet doors. Above those doors, the left two-door-width half is closed matte white cabinet panels, and only the right two-door-width half is warm wood open shelving/display grid. The wood open area must be exactly half the bookcase width, not full width.
+Input images: Image 1 = current living room render; Image 2 = schematic layout guide for target bookcase proportions only, not visual style.
+Subject: right-side built-in bookcase/cabinet only.
+Style/medium: photorealistic modern minimalist interior render; keep Image 1 realism and lighting.
+Composition/framing: preserve Image 1 crop, camera, perspective and room layout. Align cabinet seams vertically: four equal lower white doors; upper left white closed panels align above first two doors; upper right wood open shelves align above last two doors.
+Materials/textures: matte white flat slab cabinet doors/panels; warm light-oak open shelving on the right half only; realistic shelf thickness, seams, shadows and joinery.
+Constraints: Change only the right-side bookcase/cabinet area. Keep coffee table, rug, floor, ceiling, kitchen, left tall white panels, laundry machines, wall surfaces, and lighting unchanged. Do not copy the schematic's flat colors; render it realistically using Image 1 style.
+Avoid: full-width wood shelving, wood shelves on the left half, fewer or more than four lower doors, handles, text, watermark, changing appliances, changing room layout, warped vertical lines.
