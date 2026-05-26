@@ -1,0 +1,25 @@
+Edit this interior rendering while keeping the design and structure unchanged.
+
+Primary change:
+- change the single white vertical panel immediately to the right of the open bookshelf, between the bookshelf and the laundry cabinet area, to the same Cleaf LR65 wood finish as the other wood-grain cabinetry
+
+Wood finish unification:
+- unify all visible wood-grain cabinetry parts so they match the same LR65 tone and material appearance consistently
+- this includes the coffee station wood, the vertical slatted panel area, the small lower wood cabinet, the bookshelf frame, shelf boards, lower drawer fronts, and the newly changed right-side panel
+- keep the LR65 finish consistent: warm light brown-beige, fine dense straight grain, subtle low-contrast variation, realistic matte panel surface
+- avoid any mismatch where one wood area looks more yellow, pink, gray, washed-out, or darker than the others
+
+Quality upgrade:
+- improve image quality only
+- make the rendering feel closer to a real premium interior photograph
+- increase sharpness, edge cleanliness, material realism, and surface definition
+- reduce any soft, muddy, noisy, smudged, or AI-looking areas
+
+Strict constraints:
+- keep exactly the same room geometry, cabinet layout, bookshelf structure, shelf count, drawer structure, panel proportions, door seams, camera angle, perspective, composition, marble panels, white cabinet doors on the left, floor, ceiling, walls, coffee table, laundry cabinet, lighting direction, and shadows unchanged
+- do not redesign the cabinetry
+- do not move, resize, add, or remove shelves, drawers, or panels
+- do not change any non-wood colors except the one specified right-side white panel becoming LR65
+- do not noticeably change the overall scene brightness or color balance
+
+The final result should look like the same design, but with the right-side white panel converted to LR65, all wood tones unified consistently, and the rendering cleaner and more photoreal.

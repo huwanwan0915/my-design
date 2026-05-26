@@ -1,0 +1,28 @@
+Edit only the lower wood cabinet section of the right-side bookshelf.
+
+Primary request:
+- make the lower bookshelf cabinet become exactly two wood drawers only
+- use one single clean, sharp, straight horizontal seam in the center to divide the cabinet into two equal-height drawers
+- keep the outer cabinet width, outer frame, and side edges unchanged
+- make the drawer lines crisp, clear, precise, and architecturally straight
+
+Drawer design requirements:
+- exactly 2 drawers, not 3 drawers
+- no extra horizontal split lines
+- no vertical split lines
+- no handles
+- keep the same LR65 wood tone and wood grain direction as the surrounding bookshelf wood
+- keep the drawer fronts flat, minimal, and premium
+
+Preservation constraints:
+- keep the open shelves above unchanged
+- keep the bookshelf width, proportions, marble back panel, white cabinet doors, laundry area, coffee station, coffee table, floor, ceiling, lighting, camera angle, and room geometry unchanged
+- do not move or redesign any objects outside the lower drawer section
+- do not add new decor
+
+Quality constraints:
+- improve the lower drawer edge definition and material realism
+- keep all lines sharp and clean
+- avoid warped seams, blurry drawer edges, extra panels, or distorted geometry
+
+The final result should show a neat built-in bookshelf base cabinet with exactly two clear LR65 drawers and crisp linework.

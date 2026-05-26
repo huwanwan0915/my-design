@@ -1,0 +1,25 @@
+Edit this interior rendering with strict preservation of the existing design.
+
+Only one panel is allowed to change:
+- change only the single narrow white vertical panel immediately to the right of the open bookshelf, between the bookshelf and the laundry cabinet area, to Cleaf LR65 wood finish
+
+Everything else must remain unchanged:
+- keep the full row of tall matte-white cabinet doors to the left of the bookshelf exactly white and unchanged
+- keep the laundry cabinet doors on the far right exactly white and unchanged
+- keep the bookshelf open shelves, decor objects, marble back panel, shelf boards, lower two drawers, coffee station, slatted panel area, coffee table, floor, ceiling, walls, lighting, shadows, camera angle, perspective, and room geometry unchanged
+- do not convert any other white panel or white door into wood
+
+Material requirement for the changed panel:
+- use the same LR65 wood tone and finish as the existing wood elements in the scene
+- warm light brown-beige wood tone
+- fine dense straight grain
+- subtle low-contrast variation
+- realistic matte panel surface
+
+Strict constraints:
+- do not redesign the cabinetry
+- do not move, resize, add, or remove shelves, drawers, doors, seams, or objects
+- do not change any non-wood color except the one specified narrow right-side white panel becoming LR65
+- do not noticeably change overall brightness or color balance
+
+The final result should look like the same image, with only the narrow white panel on the right side of the bookshelf changed to LR65, and everything else untouched.

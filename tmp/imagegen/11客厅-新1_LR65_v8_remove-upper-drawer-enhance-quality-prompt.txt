@@ -1,0 +1,20 @@
+Edit this interior rendering to improve image quality only.
+
+Keep the exact cabinet layout, room geometry, camera angle, perspective, composition, LR65 wood material placement, panel proportions, door seams, shelf structure, white cabinet doors, marble back panels, countertop objects, lighting direction, shadows, and all decor unchanged.
+
+Refine only the rendering quality:
+- increase overall sharpness and clean edge definition
+- improve material realism and surface clarity
+- make the LR65 wood grain read cleaner, finer, and more premium without changing its color family
+- improve micro-contrast and local detail on cabinetry surfaces
+- reduce any softness, muddiness, blotchiness, noisy texture, or AI-smudged areas
+- keep a clean high-end whole-home custom interior rendering look
+
+Important constraints:
+- do not redesign or move any object
+- do not change any door style, wood tone, marble pattern, or shelf layout
+- do not add or remove handles, decor, furniture, or architectural elements
+- do not brighten or darken the scene noticeably
+- do not alter the existing LR65 finish intent
+
+The result should look like the same final rendering, but cleaner, crisper, and more polished at presentation quality.

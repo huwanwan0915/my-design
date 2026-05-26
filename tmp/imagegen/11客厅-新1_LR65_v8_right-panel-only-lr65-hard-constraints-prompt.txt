@@ -1,0 +1,30 @@
+Edit this interior rendering with very strict preservation of the existing cabinet design.
+
+Only one white panel is allowed to change:
+- change only the single narrow white vertical panel immediately to the right of the open bookshelf, between the bookshelf and the laundry cabinet area, to Cleaf LR65 wood finish
+
+All other white cabinet panels must remain white:
+- keep the full row of tall matte-white cabinet doors to the left of the bookshelf exactly white, unchanged in color, seams, proportions, and material
+- keep the laundry cabinet doors on the far right exactly white and unchanged
+- do not convert any other white door or white panel into wood
+
+Wood finish unification:
+- unify all existing wood-grain cabinetry so they share one consistent LR65 appearance
+- this applies only to wood elements: coffee station wood, the slatted panel area, the small lower wood cabinet, the bookshelf frame, shelf boards, lower drawer fronts, and the newly changed right-side narrow panel
+- use one consistent LR65 finish: warm light brown-beige, fine dense straight grain, low-contrast variation, realistic matte panel surface
+- remove any mismatch where one wood area looks more yellow, darker, pinker, grayer, or washed-out than the others
+
+Quality upgrade:
+- improve image quality only
+- make the rendering cleaner, sharper, and closer to a real premium interior photograph
+- improve material realism, edge definition, and surface clarity
+- reduce any soft, muddy, noisy, smudged, or AI-looking areas
+
+Strict constraints:
+- keep exactly the same room geometry, cabinet layout, bookshelf structure, shelf count, drawer structure, panel proportions, door seams, camera angle, perspective, composition, marble panels, floor, ceiling, walls, coffee table, lighting direction, shadows, and all architecture unchanged
+- do not redesign the cabinetry
+- do not move, resize, add, or remove shelves, drawers, doors, or panels
+- do not change any non-wood color except the one specified narrow right-side white panel becoming LR65
+- do not noticeably change the overall scene brightness or color balance
+
+The final result should look like the same design, with only the narrow white panel on the right side of the bookshelf changed to LR65, all wood tones unified consistently, and all other white doors still remaining white.

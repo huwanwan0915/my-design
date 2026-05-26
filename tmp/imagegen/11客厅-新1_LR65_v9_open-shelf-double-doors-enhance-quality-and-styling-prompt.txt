@@ -1,0 +1,28 @@
+Edit this interior rendering to improve realism and presentation quality while keeping the existing design unchanged.
+
+Keep exactly the same room geometry, cabinet layout, bookshelf structure, shelf count, shelf positions, bookshelf width, double-door lower cabinet design, panel proportions, door seams, camera angle, perspective, composition, white cabinet doors, LR65 wood finish placement, marble panels, floor, ceiling, walls, laundry area, coffee table, lighting direction, shadows, and all architectural relationships unchanged.
+
+Primary quality upgrade:
+- improve image quality only
+- make the rendering feel closer to a real premium interior photograph
+- increase sharpness, edge cleanliness, surface definition, depth, and material realism
+- reduce any soft, muddy, noisy, smudged, or AI-generated looking areas
+- keep the LR65 wood finish refined, realistic, matte, and premium
+
+Bookshelf open-shelf styling only:
+- add tasteful minimal decor objects only inside the open bookshelf levels
+- use a restrained mix of books, small sculptures, and elegant decorative pieces
+- keep the shelf styling clean, balanced, premium, and not crowded
+- no readable text on books
+- add subtle integrated warm LED strip lighting only inside the open bookshelf
+- the shelf lighting should feel hidden, built-in, soft, architectural, and realistic
+
+Important constraints:
+- do not redesign the cabinetry
+- do not move, resize, add, or remove shelves
+- do not change the bookshelf width or lower double-door cabinet structure
+- do not alter the white cabinet doors, marble materials, or room layout
+- do not noticeably change the scene brightness or color balance
+- do not add extra furniture or modify anything outside the open bookshelf styling zone
+
+The final result should look like the same design, but cleaner, more realistic, closer to a polished real-life interior photo, with subtle styled bookshelf decor and integrated warm shelf lighting.
