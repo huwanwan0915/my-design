@@ -1,0 +1,16 @@
+Edit the provided interior render image. Modify only the right-side wooden bookshelf base cabinet area.
+
+Required change:
+- The existing wooden drawer row under the open shelves is currently floating, with an empty recessed space below it.
+- Add one additional matching wooden drawer row directly below the existing drawer row, extending the cabinet down to the floor so the drawer cabinet looks grounded and not suspended.
+- The result should be two stacked drawer rows total.
+- Each drawer row must be split evenly into two equal-width drawers, left and right.
+- Match the existing light oak / warm wood grain, drawer seams, alignment, perspective, scale, and lighting.
+- Add subtle floor contact shadow so the cabinet reads as floor-standing.
+
+Strict preservation constraints:
+- Keep all open bookshelf shelves unchanged.
+- Keep all shelf spacing, LED strip lights, books, bowls, vases, ornaments, wall panels, washer/dryer, coffee table, rug, floor, ceiling, and all other areas unchanged.
+- Do not change the camera angle, framing, image size, colors, or overall room design.
+- Do not add extra objects outside the new lower drawer row.
+- No text, no watermark.
