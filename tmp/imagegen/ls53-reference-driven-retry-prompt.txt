@@ -1,0 +1,12 @@
+Use case: reference-driven interior material replacement
+Asset type: high-resolution interior design render preview
+Primary request: Recreate the provided living room built-in cabinet / wall panel image using CLEAF 可丽芙 LS53 (Poro Noce, deep walnut vertical woodgrain) as the dominant wood material, driven by the three LS53 reference images.
+Input images: Image 1 is the target living room scene/layout; Images 2-4 are LS53 material references. Use the LS53 references for exact color, grain direction, grain density, contrast, and satin tactile finish.
+Scene/backdrop: modern living room TV wall and integrated storage/bookcase, same layout and perspective as the target scene.
+Subject: all large wood cabinet fronts, vertical side panels, wall panels, and shelf wood surfaces should become LS53 deep walnut woodgrain.
+Style/medium: photorealistic interior rendering, crisp commercial catalog quality, not painterly, not CGI plastic.
+Composition/framing: preserve the original camera angle, room geometry, cabinet proportions, white/cream panels, open shelves, ceiling, floor, and lighting placement from the target scene.
+Lighting/mood: soft indoor daylight and warm ambient lighting; show subtle satin reflections without glossy glare.
+Color palette: LS53 dark warm walnut: deep brown base, charcoal-brown shadows, muted golden-brown fine streaks, no orange/yellow cast, no gray wash.
+Materials/textures: vertical continuous LS53 woodgrain with fine dense linear pores, irregular natural striations, layered dark and medium brown ribbons, realistic wood fiber micro-detail, tactile matte/satin finish. Grain must be vertical on tall panels and aligned continuously across adjacent panel faces where plausible.
+Constraints: reference-driven material accuracy is the priority. Keep the scene layout unchanged. Keep resolution and detail high. Do not add any text, labels, logos, watermark, people, or extra furniture. Do not invent a new wood species. Avoid blurry texture, low-frequency fake stripes, repeated wallpaper pattern, overly smooth plastic, exaggerated contrast, red mahogany, yellow oak, and noisy artifacts.

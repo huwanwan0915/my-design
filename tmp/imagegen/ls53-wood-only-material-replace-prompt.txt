@@ -1,0 +1,8 @@
+Use case: precise masked material replacement
+Asset type: interior design preview
+Primary request: Change ONLY the masked editable wood veneer areas in Image 1 from light oak to CLEAF 可丽芙 LS53 / Poro Noce deep walnut, using Images 2-4 as the exact LS53 material references.
+Input images: Image 1 is the base room and must be preserved; Images 2-4 are LS53 references for color, grain direction, texture density, and satin finish.
+Materials/textures inside mask only: vertical LS53 deep walnut woodgrain with dark warm brown base, charcoal-brown shadows, muted golden-brown fine streaks, dense straight vertical pores, natural irregular linear striations, matte/satin tactile surface. Match the reference images closely.
+Composition/framing: keep the original image dimensions, camera angle, layout, cabinet geometry, panel seams, shelves, objects, washing machines, floor, carpet, coffee table, lighting, white cabinet doors, stone/marble backs, ceiling, walls, and all non-masked colors unchanged.
+Constraints: edit only the transparent masked wood areas. Do not recolor white doors, walls, floor, carpet, stone, appliances, decorations, shelves' contents, lights, shadows outside the masked areas, or overall scene brightness. Do not redesign the room. Do not add/remove objects. No text, watermark, labels, people, or logos.
+Avoid: global color shift, layout changes, darkening the whole scene, replacing marble/stone with wood, changing white panels, fake low-resolution stripes, plastic gloss, yellow oak, red mahogany, repeated wallpaper pattern, blur.
