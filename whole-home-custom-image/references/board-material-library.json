@@ -53,6 +53,61 @@
       "prompt_anchor": "Cleaf LR65 Poronoce, a distinctly warm camel-brown beige board finish with a grounded light brown-beige base, extremely fine dense straight vertical grain, low-contrast variation, and a soft satin-matte panel surface with a subtle board sheen, never bleached, grayish, pink, or generic pale oak",
       "confidence": "medium",
       "source_note": "Recorded from the physical board label and corrected against the user-confirmed real sample direction. The persistent memory is: warmer, slightly deeper, slightly browner than generic pale oak, with denser straighter grain and a subtle board sheen."
+    },
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "LS72",
+      "aliases": [],
+      "series_or_finish": "LS wood finish",
+      "visual_family": ["light warm beige honey-oak board", "pale natural oak", "fine soft straight vertical grain"],
+      "base_colors": {
+        "highlight": "#D9BF98",
+        "base": "#C9A97C",
+        "fine_grain": "#B99363",
+        "deep_grain": "#9F7B50"
+      },
+      "surface_notes": "The confirmed target reads as a light warm beige honey-oak Cleaf board finish. It is lighter, cleaner, and softer than LR65, with a warm pale natural oak base and restrained golden-beige variation. The grain is primarily fine, soft, straight, vertical, continuous, and low contrast, with only slight natural wood movement. It should not drift toward gray-washed oak, bleached white oak, red/yellow saturated wood, dark camel-brown LR65-like depth, rustic knots, mountain grain, weathered timber, high gloss, or dead-flat paint.",
+      "prompt_anchor": "Cleaf LS72, a light warm beige honey-oak board finish with a clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, and a refined satin-matte soft-sheen panel surface, lighter and cleaner than LR65, never gray-washed, bleached white, red, dark camel-brown, knotty, rustic, or high-gloss",
+      "confidence": "high",
+      "source_note": "Recorded from two user-provided LS72 reference images: one close-up board sample and one large wall-panel/shelf application image, both visibly marked LS72. Persistent memory: light warm honey-beige oak, fine low-contrast vertical grain, modern soft-sheen matte board, lighter and cleaner than LR65."
+    },
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "S185",
+      "aliases": ["S/85", "S185 QUERCIA", "QUERCIA / QUERCIA A"],
+      "series_or_finish": "QUERCIA",
+      "visual_family": ["medium warm smoked oak", "brown taupe oak", "fine dense vertical oak grain"],
+      "base_colors": {
+        "highlight": "#B08B67",
+        "base": "#8E6B4F",
+        "fine_grain": "#6F513D",
+        "deep_shadow_grain": "#4B352B"
+      },
+      "surface_notes": "The confirmed target reads as a medium-deep warm brown smoked-oak Cleaf board finish. The base is warm brown with a taupe-gray undertone, not pale oak, yellow oak, red wood, or walnut. It is much darker than LS72 and steadier, smokier, and more brown-gray than LR65. The grain is very fine, dense, straight, vertical oak grain with continuous fiber-like linear texture, low-to-medium contrast, and subtle natural vertical tonal bands. It should avoid coarse mountain grain, large knots, rustic weathered timber, black walnut drama, high gloss, oily shine, or plastic-looking finish.",
+      "prompt_anchor": "Cleaf S185 Quercia, a medium warm smoked-oak board finish with a brown-taupe oak base, fine dense straight vertical oak grain, subtle fiber-like linear texture, low-to-medium contrast warm dark grain variation, and a refined satin-matte soft-sheen panel surface, deeper and smokier than LR65 and much darker than LS72, never pale oak, yellow oak, red wood, black walnut, rustic knotty timber, mountain grain, or high-gloss",
+      "confidence": "high",
+      "source_note": "Recorded from two user-provided S185/QUERCIA reference images. The images show S/85 and S185 QUERCIA / QUERCIA A labels on large wardrobe or wall-panel surfaces. Persistent memory: medium-deep warm smoked brown oak, fine dense vertical straight grain, brown-taupe wood-fiber feel, low-sheen satin-matte board."
+    },
+    {
+      "brand": "Cleaf",
+      "brand_zh": "可丽芙",
+      "code": "LS53",
+      "aliases": ["PORO NOCE", "Poro Noce LS53"],
+      "series_or_finish": "PORO NOCE",
+      "visual_family": ["dark smoked noce", "deep brown walnut board", "high-contrast vertical walnut-like grain"],
+      "base_colors": {
+        "soft_highlight": "#6B4C3C",
+        "amber_grain": "#604538",
+        "base": "#503C33",
+        "base_shadow": "#4C392F",
+        "deep_shadow_grain": "#3F302B"
+      },
+      "surface_notes": "The confirmed target reads as a dark smoked noce/walnut Cleaf board finish. The base is deep brown to black-brown, not pale oak, yellow oak, or gray oak. It carries warm reddish-brown, caramel-brown, and amber vertical grain streaks with stronger, more dramatic contrast than S185, LR65, or LS72. The grain direction is mainly continuous vertical long grain, mixing fine dense lines with occasional wider tonal bands. It should avoid rustic knots, coarse reclaimed timber, flat black walnut with no detail, overly red mahogany, oily gloss, high shine, or plastic laminate effects. The surface should remain a refined satin-matte/soft-sheen custom panel finish.",
+      "prompt_anchor": "Cleaf LS53 Poro Noce, a dark smoked noce walnut board finish with a deep brown to black-brown base, warm reddish-brown caramel and amber vertical grain streaks, medium-to-high contrast long straight wood grain, refined satin-matte soft-sheen panel surface, darker and more dramatic than S185, never pale oak, yellow oak, gray oak, flat black walnut, red mahogany, rustic knotty timber, coarse mountain grain, oily gloss, or plastic laminate",
+      "confidence": "high",
+      "source_note": "Recorded from the user-provided LS53 real sample image saved locally as 可丽芙ls53.jpg; the image label shows PORO NOCE LS53. Color anchors were extracted from non-label board areas while avoiding text and edge regions. Persistent memory: deep brown/black-brown base, reddish-brown and amber-caramel vertical grain, medium-to-high contrast dark noce/walnut board with refined satin-matte soft sheen. Color values are AI visual anchors only, not production sampling values."
     }
   ]
 }

@@ -1,0 +1,8 @@
+Material-only edit on the original image. Do not use creative redesign.
+
+Replace only the wood material in the transparent/editable mask area with Cleaf LS72. Do not change anything outside the mask. Keep the original image layout, crop, camera, object silhouettes, cabinet geometry, shelf count, shelf objects, coffee table, appliances, rug, floor, ceiling, walls, lights, colors outside wood, and all non-wood details unchanged.
+
+Cleaf LS72 material description:
+light warm beige honey-oak board, clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, refined satin-matte soft-sheen modern panel surface. Lighter and cleaner than LR65. Subtle visible vertical grain, realistic scale, no knots, no rustic pattern, no mountain grain, no orange/red/yellow saturation, no gray wash, no bleached white, no high gloss.
+
+Important: This is NOT a room redesign. This is NOT a new rendering. Perform a localized texture/color replacement only. Preserve original objects pixel-for-pixel as much as possible; only the wood color/texture should become LS72.

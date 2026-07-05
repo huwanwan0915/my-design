@@ -1,0 +1,21 @@
+Material-only interior image edit. Use Image 1 as the exact locked source image. Do not redesign, recrop, move, add, or remove anything.
+
+Goal:
+Replace only the existing wood-grain board material inside the transparent/editable mask area with Cleaf / 可丽芙 LS72. Keep the same room layout, cabinet geometry, shelf count, shelf objects, coffee machine, washing machines, robot vacuum, marble table, black tabletop, rug, floor, wall, ceiling, lights, shadows, reflections, and all non-wood colors unchanged.
+
+LS72 reference basis:
+Use the attached LS72 real-sample reference images as the only material reference. Follow these extracted color anchors from the real LS72 photos, avoiding text/watermark/highlight areas:
+- soft warm highlight: #AD9174 / #AF8E69
+- main warm honey-beige oak base: #A6896B / #A38768
+- pale natural oak midtone: #A28566 / #AD8964
+- fine deeper grain tone: #A6825D / #AC8861
+These are approximate AI visual anchors only, not production color values.
+
+LS72 target:
+Cleaf LS72, a light warm beige honey-oak board finish with a clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, and a refined satin-matte soft-sheen panel surface. It should be lighter, cleaner, and softer than LR65, with a warm honey-beige oak feeling, not dark brown.
+
+Texture requirements:
+Preserve panel seams, drawer gaps, shelf edges, slatted strip geometry, lighting and shadows. Apply fine soft straight vertical grain at realistic scale to all edited wood panels. Keep a premium custom-board look, not raw natural timber.
+
+Avoid:
+any layout change, object change, new decorations, removed decorations, changed appliances, changed white cabinet color, black blocks, altered crop, altered camera, dark LR65-like camel brown, gray-washed oak, bleached white oak, red/orange/yellow saturated wood, rustic knots, coarse mountain grain, high gloss, oily shine, plastic-looking finish, blurry texture.

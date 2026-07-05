@@ -1,0 +1,21 @@
+Material-only interior image edit. Use Image 1 as the exact locked source image. Do not redesign, recrop, move, add, or remove anything.
+
+Goal:
+Replace only the existing wood-grain board material inside the transparent/editable mask area with Cleaf / 可丽芙 LR65 PORONOCE. Keep the same room layout, cabinet geometry, shelf count, shelf objects, coffee machine, washing machines, robot vacuum, marble table, black tabletop, rug, floor, wall, ceiling, lights, shadows, reflections, and all non-wood colors unchanged.
+
+LR65 reference basis:
+Use the attached LR65 real-sample reference images as the only material reference. Follow these extracted color anchors from the real LR65 photos, avoiding text/watermark/highlight areas:
+- soft highlight / light board tone: #D2B79B / #D2B998
+- warm camel-beige base: #D0B196 / #D3B392
+- grounded beige-brown grain tone: #C9AD91 / #C7B098
+- softer shadow grain: #CAB39D / #D2B597
+These are approximate AI visual anchors only, not production color values.
+
+LR65 target:
+Cleaf LR65 Poronoce, a distinctly warm camel-brown beige board finish with a grounded light brown-beige base, extremely fine dense straight vertical grain, low-contrast variation, and a soft satin-matte panel surface with subtle board sheen. It should be warm, slightly deeper and browner than generic pale oak, but not dark, not yellow, not red, not pink, not gray-washed, and not bleached.
+
+Texture requirements:
+Preserve panel seams, drawer gaps, shelf edges, slatted strip geometry, lighting and shadows. Apply extremely fine dense straight vertical grain at realistic scale to all edited wood panels. Keep a premium custom-board look, not raw natural timber.
+
+Avoid:
+any layout change, object change, new decorations, removed decorations, changed appliances, changed white cabinet color, black blocks, altered crop, altered camera, generic pale oak, yellow oak, red/orange wood, gray wash, pink cast, rustic knots, coarse mountain grain, high gloss, oily shine, plastic-looking finish, blurry texture.

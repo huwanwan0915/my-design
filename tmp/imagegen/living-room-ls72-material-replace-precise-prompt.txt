@@ -1,0 +1,15 @@
+Use case: precise-object-edit
+Asset type: photorealistic interior material replacement
+Primary request: Replace all visible existing wood-grain board surfaces in the living room image with Cleaf / 可丽芙 LS72, using the attached LS72 reference images as the exact color, grain, texture scale, and finish target.
+
+Material target from board-material-library:
+Cleaf LS72, a light warm beige honey-oak board finish with a clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, and a refined satin-matte soft-sheen panel surface, lighter and cleaner than LR65, never gray-washed, bleached white, red, dark camel-brown, knotty, rustic, or high-gloss.
+
+Areas to edit:
+Only the masked wooden cabinetry / panel surfaces: the left coffee-bar wood niche, left lower wood drawer fronts, the narrow vertical slatted wood strip near center-left, the low wood panel below that strip, the right display shelf back panel, shelf boards, vertical side/return boards, and lower right cabinet/drawer fronts. Every edited wood surface should share the same LS72 color family and fine vertical grain while preserving the original panel seams, drawer gaps, shelf thickness, edge lines, depth, perspective, warm shelf lighting, and natural shadows.
+
+Areas to preserve unchanged:
+Keep the white cabinet doors and tall panels, walls, ceiling, cove/linear lights, stone floor, rug, marble coffee table, black tabletop insert, appliances, washing machines, robot vacuum, decor, books, bowls, coffee machine, black countertop, all non-wood colors, camera angle, layout, proportions, and image composition unchanged.
+
+Quality requirements:
+Highly realistic interior rendering. The LS72 grain must be visible but subtle: fine, soft, straight vertical lines with low contrast and slight natural movement. Keep texture scale proportional to each board face. Avoid blurry pasted texture, noisy artifacts, changed furniture shapes, changed lighting, changed shelf objects, altered appliance details, or any new objects.

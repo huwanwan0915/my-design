@@ -10,7 +10,7 @@
   - 未配置 `OPENAI_IMAGE_API_KEY` 时回退到普通 `OPENAI_API_KEY`
 
 - 直接走 Images API：
-  - 首选 `gpt-image-2-3x2-4k`
+  - 首选 `gpt-image-2`
   - 稳定兼容可用 `gpt-image-1`
   - 快速草图可用 `gpt-image-1-mini`
 

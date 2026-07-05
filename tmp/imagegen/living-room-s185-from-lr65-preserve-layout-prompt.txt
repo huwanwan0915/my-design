@@ -1,0 +1,21 @@
+Material-only interior image edit. Use Image 1 as the exact locked source image. Do not redesign, recrop, move, add, or remove anything.
+
+Goal:
+Replace only the existing wood-grain board material inside the transparent/editable mask area with Cleaf / 可丽芙 S185 QUERCIA. Keep the same room layout, cabinet geometry, shelf count, shelf objects, coffee machine, washing machines, robot vacuum, marble table, black tabletop, rug, floor, wall, ceiling, lights, shadows, reflections, and all non-wood colors unchanged.
+
+S185 reference basis:
+Use the attached S185 reference image(s) as the material reference. Also follow these extracted color anchors from the real S185 reference photos, avoiding text/watermark/highlight areas:
+- soft muted highlight: #897665 / #8E7260
+- main brown-taupe oak base: #7C6045 / #736458
+- darker warm smoked-oak base: #694E3C / #694E33
+- fine deep grain lines: #705F55 / #694E33
+These are approximate AI visual anchors only, not production color values.
+
+S185 target:
+Cleaf S185 Quercia, a medium warm smoked-oak board finish with a brown-taupe oak base, fine dense straight vertical oak grain, subtle fiber-like linear texture, low-to-medium contrast warm dark grain variation, and a refined satin-matte soft-sheen panel surface. It is deeper, smokier, and more brown-gray than LR65, and much darker than LS72.
+
+Texture requirements:
+Preserve panel seams, drawer gaps, shelf edges, slatted strip geometry, lighting and shadows. Apply fine dense vertical straight oak grain at realistic scale to all edited wood panels. Keep a premium custom-board look, not raw natural timber.
+
+Avoid:
+any layout change, object change, new decorations, removed decorations, changed appliances, changed white cabinet color, black blocks, altered crop, altered camera, pale oak, yellow oak, red wood, black walnut, rustic knots, coarse mountain grain, over-strong contrast, high gloss, oily shine, plastic-looking finish, blurry texture.

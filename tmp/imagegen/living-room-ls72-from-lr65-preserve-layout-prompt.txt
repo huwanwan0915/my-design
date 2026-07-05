@@ -1,0 +1,7 @@
+Material-only edit. Use Image 1 as the exact locked source image. Do not redesign, recrop, move, add, or remove anything.
+
+Replace only the existing LR65-looking wood board material in the transparent/editable mask area with Cleaf / 可丽芙 LS72. Keep the same room layout, cabinet geometry, shelf count, shelf objects, coffee machine, washing machines, robot vacuum, marble table, black tabletop, rug, floor, wall, ceiling, lights, shadows, reflections, and all non-wood colors unchanged.
+
+LS72 target: light warm beige honey-oak board, clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, satin-matte / soft-sheen modern panel surface. It should be lighter, cleaner, and softer than the current LR65 wood. Preserve panel seams, drawer gaps, shelves, edge lines, and lighting; only recolor/retexture the wood grain to LS72.
+
+Avoid any layout change, object change, new decorations, removed decorations, changed appliances, changed white cabinet color, black blocks, altered crop, altered camera, darker LR65 brown, gray wash, bleached white oak, orange/red saturation, knots, rustic grain, mountain grain, high gloss, blurry texture.

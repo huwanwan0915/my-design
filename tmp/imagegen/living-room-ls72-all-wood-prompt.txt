@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: photorealistic interior material replacement
+Primary request: Replace every visible wood-grain board surface in the living room image with the exact Cleaf/Kelifu LS72 material shown in the reference swatch. Use LS72 as a light warm beige honey-oak tone with fine, soft, low-contrast vertical straight wood grain, matte/soft-sheen surface, clean modern board texture.
+Input images: Image 1 is the living room to edit. Image 2 is the LS72 swatch reference for exact color, grain direction, texture scale, and tactile feel.
+Materials/textures: All edited wooden cabinet fronts, open shelf backs, shelf boards, side panels, drawer fronts, central slatted strip, and wood returns must share the same LS72 color and fine vertical grain. Keep panel seams, drawer gaps, shelf geometry, shadows, lighting gradients, and perspective realistic.
+Constraints: Change only the masked wood material areas. Keep the white cabinet doors, walls, ceiling, floor, rug, sofa/coffee table, appliances, black countertop, coffee machine, decor objects, books, shelf lighting, proportions, camera angle, and overall image composition unchanged. Do not alter layout, add objects, remove objects, or change non-wood colors.
+Avoid: dark walnut, red/yellow saturated wood, rough rustic grain, strong knots, high-gloss finish, blurry texture, changed furniture shapes, changed appliances, changed wall/floor/rug/lighting.

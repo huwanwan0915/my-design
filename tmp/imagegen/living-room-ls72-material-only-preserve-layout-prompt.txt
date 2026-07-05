@@ -1,0 +1,27 @@
+TASK: material-only image edit. Do not redesign or re-render the room.
+
+Use Image 1 as the locked composition and geometry. Use Image 2 only as the Cleaf / 可丽芙 LS72 material reference.
+
+Replace ONLY the existing wood-grain material inside the provided mask with Cleaf LS72. Keep every object, outline, edge, position, camera angle, crop, perspective, lighting placement, and non-wood color exactly as in Image 1.
+
+LS72 target:
+Cleaf LS72 is a light warm beige honey-oak board finish: clean pale natural oak base, fine soft straight vertical grain, low-contrast warm golden-beige variation, satin-matte / soft-sheen modern panel surface. It is lighter, cleaner, and softer than LR65. The grain should be subtle but visible, vertical on vertical boards and aligned with each board direction, with realistic scale.
+
+Wood areas to recolor/retexture only:
+- left coffee-bar wood niche and lower wood drawer fronts
+- narrow vertical slatted wood strip near center-left
+- small low wood panel below that strip
+- right display shelf wood back panel, shelf boards, side/return boards, and lower cabinet/drawer fronts
+
+Strict preservation requirements:
+- Preserve the exact original layout and proportions.
+- Preserve the white cabinet doors and their warm off-white color.
+- Preserve the beige/stone shelf back tone except where it is actually masked wood.
+- Preserve all shelf objects, books, bowls, ornaments, coffee machine, black countertop, appliances, washing machines, robot vacuum, floor, rug, ceiling, walls, marble coffee table, and black tabletop insert.
+- Do not add people, characters, toys, new decorations, new furniture, or new objects.
+- Do not remove objects.
+- Do not change the coffee table, washing machines, rug, floor reflections, cabinet seams, panel gaps, shelf lighting, or shadows except natural material response on the edited wood.
+- Do not change image crop, aspect ratio, room width, cabinet layout, shelf count, shelf heights, appliance positions, or foreground table position.
+
+Avoid:
+layout changes, new props, people, cartoon objects, changed shelves, changed appliances, altered cabinet geometry, darker LR65-like brown, gray-washed oak, bleached white oak, orange/red/yellow saturated wood, rustic knots, mountain grain, high gloss, blurry texture, over-strong grain.
